@@ -4,7 +4,7 @@ A miniature recreation of the old ViaProxyConnect server as a ViaProxy plugin.
 ## History
 ViaProxyConnect was based on BungeeCord reconnecting the player to the lobby or target server by using ViaProxy SRV Syntax.
 Hosting it required 3 servers (BungeeCord, Lobby Server, SRV Mode ViaProxy) running at the same time and linking them together.\
-The original plugin used injection to modify the code of BungeeCord to connect to make it work for this purpose. 
+The original plugin used injection to modify the code of BungeeCord, making it work for this purpose. 
 This meant that the plugin needed to be updated for every new BungeeCord version.
 On top of that, it also added 1.7 support to BungeeCord. making it even more difficult to maintain.\
 as a Result, Permanent Shutting down of ViaProxyConnect has occurred after 1 year later of the public release of ViaProxy.\
