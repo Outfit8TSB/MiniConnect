@@ -16,7 +16,9 @@ Since ViaProxy is now responsible for the connection handling and version transl
 
 but, if you really using SRV Mode viaproxy(also known as Public Wildcard Mode ViaProxy),\
 you need to use the original plugin designed for bungeecord instead of this as the thing disables wildcard domain handling functions.\
-you may download it [here]()
+You may download it [here]().
+
+R.I.P ViaProxyConnect (2021-2024)
 
 ## Installation
 Download the latest release from the [releases page](https://github.com/ViaVersionAddons/MiniConnect/releases) and put it into the `plugins` folder of your ViaProxy server.\
