@@ -15,7 +15,7 @@ It removes the need for multiple servers and automatically sets everything up fo
 Since ViaProxy is now responsible for the connection handling and version translation, this plugin is much easier to maintain and should theoretically never break (unless ViaProxy changes something).
 
 but, if you really using SRV Mode viaproxy(also known as Public Wildcard Mode ViaProxy),\
-you need to use the original plugin designed for bungeecord instead of this as the thing disables wildcard domain handling functions.\
+you need to use the original plugin designed for bungeecord instead of this as MiniConnect disables wildcard domain handling functions.\
 You may download it [here]().
 
 R.I.P ViaProxyConnect (2021-2024)
