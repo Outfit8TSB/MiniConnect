@@ -21,9 +21,11 @@ You may download it [here]().
 R.I.P ViaProxyConnect (2021-2024)
 
 ## Installation
-Download the latest release from the [releases page](https://github.com/ViaVersionAddons/MiniConnect/releases) and put it into the `plugins` folder of your ViaProxy server.\
-<b>After installing the plugin, ViaProxy will no longer function as a normal proxy server! The plugin will also change some config options of ViaProxy to make it work properly.</b>\
-This can always be reverted by removing the plugin from the `plugins` folder and changing the config options back to their original values.\
+Download the latest release from the [releases page](https://github.com/ViaVersionAddons/MiniConnect/releases) and put it into the `plugins` folder of your ViaProxy server.
+> [!NOTE]
+> After installing the plugin, ViaProxy will no longer function as a normal proxy server! The plugin will also change some config options of ViaProxy to make it work properly.\
+> This can always be reverted by removing the plugin from the `plugins` folder and changing the config options back to their original values.
+
 The plugin itself does not have any configuration options.
 
 ## Usage
@@ -39,8 +41,23 @@ After joining the server, a GUI with settings will open:\
 6. **How to use**: A small usage guide. it's same as the welcome message on ViaProxyConnect Server.
 7. **Disconnect**: Disconnect from the lobby (same as closing the GUI, it's also same as exiting ViaProxyConnect Manually).
 
+> [!IMPORTANT]
+> Enabling online mode also saves your logged in Minecraft account information (access token).\
+> Your data will be encrypted, but make sure you trust the MiniConnect server you are enabling this option on.\
+> Malicious servers can circumvent this encryption and access your data.
+
 After setting all required option (server address and protocol version), click on the `Connect to server` button to connect to the server.\
-If you disconnect from the server, all settings will be reset and you will have to set them again.
+Unless online mode is enabled, all settings will be lost on disconnect and you will have to set them again.
 
 When connected to a server, you can return to the lobby by typing the `/disconnect` command in the chat.
 This will retain all settings and you can immediately connect to another server.
+
+### Wildcard Domain Support
+If the MiniConnect server supports wildcard domains, you can use the ViaProxy wildcard syntax to pre-fill the server address and version.\
+Examples:
+- Format 1:\
+  `address_port_version.viaproxy.hostname` e.g. `server.example.com_25565_1.8.viaproxy.example.com`
+- Format 2:\
+  `address.<address>.port.<port>.version.<version>.f2.viaproxy.hostname` e.g. `address.server.example.com.port.25565.version.1.8.f2.viaproxy.example.com`
+
+Both fill `server.example.com:25565` as the server address and `1.8` as the protocol version.
